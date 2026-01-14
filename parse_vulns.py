@@ -96,7 +96,7 @@ def parse_cyclonedx(file_path: str):
 
     return results, counters
 
-def save_json(results, counters, output_file="parsed_vulnerabilities.json"):
+def save_json(results, counters, output_file):
     output = {
         "summary": {
             "total_vulnerabilities": counters["TOTAL"],
